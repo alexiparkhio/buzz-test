@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
@@ -10,7 +11,7 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: calc(100vw * 9 / 16) /* TODO make this prettier */
 }
 
@@ -47,4 +48,89 @@
 
 .header__play-image:active {
     opacity: 0.5;
+}
+
+.top-commercial {
+    display: flex;
+    padding: 10%;
+    max-width: 100%;
+}
+
+.top-commercial__text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-commercial__header {
+    width: 50%;
+    font-weight: 900;
+    font-size: 3.5vw;
+    color: red;
+    padding-bottom: 2%;
+}
+
+.top-commercial__separator {
+    height: 1px;
+    width: 75px;
+    background-color: #cccccc;
+}
+
+.top-commercial__message {
+    padding-top: 2%;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 35vw;
+}
+
+.top-commercial__created-by {
+    height: 100%;
+    width: 50%;
+}
+
+.top-commercial__created-message {
+    font-style: italic;
+    color:gray;
+    font-size: 1.25vw;
+    width: 100%;
+}
+
+.top-commercial__jacket-image {
+    position: absolute;
+    width: 50vw;
+    right: -22.5vw;
+}
+
+.top-commercial__logos-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top-commercial__logos-container > * {
+    position: absolute;
+}
+
+.top-commercial__logos-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: visible;
+}
+
+.top-commercial__adventure {
+    width: 7.5vw;
+    transform: matrix(0.94, 0.34, -0.34, 0.94, 0, 0);
+    align-self: center;
+}
+
+.top-commercial__m {
+    width: 7.5vw;
+    transform: matrix(0.99, 0.1, -0.1, 0.99, 0, 0) translateY(150%);
+}
+
+.top-commercial__p {
+    width: 7.5vw;
+    transform: matrix(0.99, 0.16, -0.16, 0.99, 0, 0) translateY(100%) translateX(20%);
 }
