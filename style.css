@@ -5,6 +5,12 @@
     overflow-x: hidden;
 }
 
+.header-title {
+    font-size: 3.5vw;
+    color: #E30613;
+    font-weight: bold;
+}
+
 .header {
     background-image: url('/assets/Video_3_6000x1536px@2x.png');
     background-size: 100vw auto;
@@ -52,7 +58,7 @@
 
 .top-commercial {
     display: flex;
-    padding: 10%;
+    padding: 12.5%;
     max-width: 100%;
 }
 
@@ -64,9 +70,6 @@
 
 .top-commercial__header {
     width: 50%;
-    font-weight: 900;
-    font-size: 3.5vw;
-    color: red;
     padding-bottom: 2%;
 }
 
@@ -78,7 +81,6 @@
 
 .top-commercial__message {
     padding-top: 2%;
-    font-weight: bold;
     font-size: 1.5vw;
     width: 35vw;
 }
@@ -99,6 +101,8 @@
     position: absolute;
     width: 50vw;
     right: -22.5vw;
+    z-index: -1;
+    transform: translateY(-25%);
 }
 
 .top-commercial__logos-container {
@@ -106,6 +110,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 75%;
 }
 
 .top-commercial__logos-container > * {
@@ -120,17 +125,60 @@
 }
 
 .top-commercial__adventure {
-    width: 7.5vw;
+    width: 7vw;
     transform: matrix(0.94, 0.34, -0.34, 0.94, 0, 0);
     align-self: center;
 }
 
 .top-commercial__m {
-    width: 7.5vw;
+    width: 7vw;
     transform: matrix(0.99, 0.1, -0.1, 0.99, 0, 0) translateY(150%);
 }
 
 .top-commercial__p {
-    width: 7.5vw;
+    width: 7vw;
     transform: matrix(0.99, 0.16, -0.16, 0.99, 0, 0) translateY(100%) translateX(20%);
+}
+
+.features__features-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 5% 5% 5%;
+}
+
+.features__features-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2.5% auto;
+    align-items: center;
+}
+
+.features__feature {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__feature-message {
+    font-weight: bold;
+    font-size: 1.75vw;
+    margin-bottom: 10%;
+}
+
+.features__feature-image {
+    width: 10vw;
+}
+
+.features__bottom {
+    margin: 3.5% auto;
+}
+
+.features__bottom-message {
+    font-size: 1.5vw;
 }
