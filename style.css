@@ -258,3 +258,64 @@
     padding: 0.5vw 2vw;
     margin: 10% auto;
 }
+
+.inspiration__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0% 3% 0%;
+}
+
+.inspiration__card-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 3.5% auto 2% auto;
+}
+
+.inspiration__trainers-image {
+    position: absolute;
+    width: 32.5vw;
+    left: -12.5vw;
+    z-index: -1;
+    transform: translateY(-55%);
+}
+
+.inspiration__card {
+    display: flex;
+    margin: 2%;
+    height: 35vw;
+}
+
+.inspiration__card-message {
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 8.5%;
+    align-self: flex-end;
+}
+
+.repairing {
+    background-image: url('/assets/4_Secador.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.strength {
+    background-image: url('/assets/Video_20.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.loctite {
+    background-image: url('/assets/FB_Video1_Bumper0.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.inspiration__source {
+    color: #707070;
+    font-size: 1vw;
+}
