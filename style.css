@@ -319,3 +319,30 @@
     color: #707070;
     font-size: 1vw;
 }
+
+.footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5D5D5D;
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+}
+
+.footer__henkel-image {
+    margin-bottom: 3%;
+    width: 8vw;
+}
+
+.footer__interest-links {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__interest-links > *:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
