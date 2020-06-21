@@ -353,3 +353,102 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-title, .inspiration__card-message {
+        font-size: 8vw;
+    }
+
+    .header__message-container {
+        align-items: center;
+        font-size: 10vw;
+    }
+
+    .header__play-image {
+        width: 25vw
+    }
+
+    .top-commercial {
+        flex-direction: column;
+    }
+
+    .top-commercial__header {
+        text-align: center;
+    }
+
+    .top-commercial__jacket-image, .top-commercial__m, .top-commercial__adventure, .top-commercial__p, .products__trousers-image {
+        display: none;
+    }
+
+    .top-commercial__text-container, .top-commercial__header, .top-commercial__message {
+        width: 100%;
+        align-items: center;
+    }
+
+    .top-commercial__message, .features__feature-message {
+        font-size: 4vw;
+    }
+
+    .features__features-box {
+        flex-direction: column;
+    }
+
+    .features__feature-message {
+        margin-bottom: 3.5%;
+    }
+
+    .features__feature {
+        margin-bottom: 15%;
+    }
+
+    .features__feature-image {
+        width: 25vw;
+    }
+
+    .features__bottom-message, .message, .inspiration__source, .footer__link, .footer__copyright {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    .products__list-container {
+        align-items: center;
+    }
+
+    .product__item {
+        width: 100%;
+    }
+
+    .product__image {
+        width: 40vw;
+    }
+
+    .product__info {
+        align-self: center;
+    }
+
+    .product__name, .product__type, .product__button {
+        font-size: 5vw;
+    }
+
+    .product__features {
+        font-size: 3.5vw;
+    }
+
+    .inspiration__card-container {
+        flex-direction: column;
+    }
+
+    .inspiration__card {
+        height: 100vw;
+    }
+
+    .footer__henkel-image {
+        width: 20vw;
+    }
+
+    .footer__interest-links {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+}
