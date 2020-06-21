@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.header-title {
+    font-size: 3.5vw;
+    color: #E30613;
+    font-weight: bold;
+}
+
+.message {
+    font-size: 1.5vw;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+.main__top-background {
+    position: absolute;
+    width: 140vw;
+    right: -17.5vw;
+    z-index: -1;
+}
+
+.header {
+    background-image: url('/assets/Video_3_6000x1536px@2x.png');
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vw * 9 / 16) /* TODO make this prettier */
+}
+
+.header__loctite-logo {
+    position: absolute;
+    top: 0;
+    max-width: 22.5%;
+    max-height: 13.5vh;
+}
+
+.header__message-container {
+    margin: auto 10%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__message-top {
+    font-weight: bolder;
+}
+
+.header__play-image {
+    width: 15vw;
+}
+
+.top-commercial {
+    display: flex;
+    padding: 12.5%;
+    max-width: 100%;
+}
+
+.top-commercial__text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-commercial__header {
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+.top-commercial__separator {
+    height: 1px;
+    width: 75px;
+    background-color: #cccccc;
+}
+
+.top-commercial__message {
+    padding-top: 2%;
+    width: 35vw;
+}
+
+.top-commercial__created-by {
+    height: 100%;
+    width: 50%;
+}
+
+.top-commercial__created-message {
+    font-style: italic;
+    color:gray;
+    font-size: 1.25vw;
+    width: 100%;
+}
+
+.top-commercial__jacket-image {
+    position: absolute;
+    width: 50vw;
+    right: -22.5vw;
+    z-index: -1;
+    transform: translateY(-25%);
+}
+
+.top-commercial__logos-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+}
+
+.top-commercial__logos-container > * {
+    position: absolute;
+}
+
+.top-commercial__logos-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: visible;
+}
+
+.top-commercial__adventure {
+    width: 7vw;
+    transform: matrix(0.94, 0.34, -0.34, 0.94, 0, 0);
+    align-self: center;
+}
+
+.top-commercial__m {
+    width: 7vw;
+    transform: matrix(0.99, 0.1, -0.1, 0.99, 0, 0) translateY(150%);
+}
+
+.top-commercial__p {
+    width: 7vw;
+    transform: matrix(0.99, 0.16, -0.16, 0.99, 0, 0) translateY(100%) translateX(20%);
+}
+
+.features__features-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 5% 5% 5%;
+}
+
+.features__features-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2.5% auto;
+    align-items: center;
+}
+
+.features__feature {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__feature-message {
+    font-weight: bold;
+    font-size: 1.75vw;
+    margin-bottom: 10%;
+}
+
+.features__feature-image {
+    width: 10vw;
+    height: 100%;
+}
+
+.features__bottom {
+    margin: 3.5% auto;
+}
+
+.products__products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__trousers-image {
+    position: absolute;
+    width: 29vw;
+    right: -10.5vw;
+    z-index: -1;
+    transform: translateY(125%);
+}
+
+.products__list-container {
+    margin: 3.5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: circle;
+    margin: 2.5%;
+}
+
+.product__image {
+    width: 13vw;
+    justify-self: flex-start;
+}
+
+.product__info {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product__name {
+    margin-top: 6.5%;
+    font-size: 2vw;
+}
+
+.product__type {
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.product__features {
+    list-style: disc;
+    list-style-position: inside;
+    text-align: center;
+    font-style: italic;
+    font-size: 1vw;
+    color: gray;
+}
+
+.product__button {
+    background-color: #E30613;
+    color: white;
+    font-size: 2.25vw;
+    border-radius: 1em;
+    padding: 0.5vw 2vw;
+    margin: 10% auto;
+}
+
+.inspiration__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0% 3% 0%;
+}
+
+.inspiration__card-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 3.5% auto 2% auto;
+}
+
+.inspiration__trainers-image {
+    position: absolute;
+    width: 32.5vw;
+    left: -12.5vw;
+    z-index: -1;
+    transform: translateY(-55%);
+}
+
+.inspiration__card {
+    display: flex;
+    margin: 2%;
+    height: 35vw;
+}
+
+.inspiration__card-message {
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 8.5%;
+    align-self: flex-end;
+}
+
+.repairing {
+    background-image: url('/assets/4_Secador.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.strength {
+    background-image: url('/assets/Video_20.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.loctite {
+    background-image: url('/assets/FB_Video1_Bumper0.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.inspiration__source {
+    color: #707070;
+    font-size: 1vw;
+}
+
+.footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5D5D5D;
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+}
+
+.footer__henkel-image {
+    margin-bottom: 3%;
+    width: 8vw;
+}
+
+.footer__interest-links {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__interest-links > *:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-title, .inspiration__card-message {
+        font-size: 8vw;
+    }
+
+    .header__message-container {
+        align-items: center;
+        font-size: 10vw;
+    }
+
+    .header__play-image {
+        width: 25vw
+    }
+
+    .top-commercial {
+        flex-direction: column;
+    }
+
+    .top-commercial__header {
+        text-align: center;
+    }
+
+    .top-commercial__jacket-image, .top-commercial__m, .top-commercial__adventure, .top-commercial__p, .products__trousers-image {
+        display: none;
+    }
+
+    .top-commercial__text-container, .top-commercial__header, .top-commercial__message {
+        width: 100%;
+        align-items: center;
+    }
+
+    .top-commercial__message, .features__feature-message {
+        font-size: 4vw;
+    }
+
+    .features__features-box {
+        flex-direction: column;
+    }
+
+    .features__feature-message {
+        margin-bottom: 3.5%;
+    }
+
+    .features__feature {
+        margin-bottom: 15%;
+    }
+
+    .features__feature-image {
+        width: 25vw;
+    }
+
+    .features__bottom-message, .message, .inspiration__source, .footer__link, .footer__copyright {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    .products__list-container {
+        align-items: center;
+    }
+
+    .product__item {
+        width: 100%;
+    }
+
+    .product__image {
+        width: 40vw;
+    }
+
+    .product__info {
+        align-self: center;
+    }
+
+    .product__name, .product__type, .product__button {
+        font-size: 5vw;
+    }
+
+    .product__features {
+        font-size: 3.5vw;
+    }
+
+    .inspiration__card-container {
+        flex-direction: column;
+    }
+
+    .inspiration__card {
+        height: 100vw;
+    }
+
+    .footer__henkel-image {
+        width: 20vw;
+    }
+
+    .footer__interest-links {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+}
