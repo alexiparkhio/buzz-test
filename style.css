@@ -27,6 +27,13 @@
     opacity: 0.5;
 }
 
+.main__top-background {
+    position: absolute;
+    width: 140vw;
+    right: -17.5vw;
+    z-index: -1;
+}
+
 .header {
     background-image: url('/assets/Video_3_6000x1536px@2x.png');
     background-size: 100vw auto;
