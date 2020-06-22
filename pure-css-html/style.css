@@ -5,6 +5,12 @@
     overflow-x: hidden;
 }
 
+.main {
+    max-width: 1366px;
+    justify-self: center;
+    margin: auto;
+}
+
 .header-title {
     font-size: 3.5vw;
     color: #E30613;
@@ -343,10 +349,14 @@
 }
 
 .footer__interest-links {
-    width: 55%;
+    width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.footer__interest-links > * {
+    margin: auto 0.5%;
 }
 
 .footer__interest-links > *:hover {
