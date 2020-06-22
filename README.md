@@ -7,8 +7,8 @@ The landing page focuses on being fully responsive and senseful in both mobile a
 ## Initialization
 The best way to open the project is to first install *Live Server* on the Visual Studio Code editor. Any of this resources is completely free: 
 
-![Live Server](/images/live-server.png)
+![Live Server](/assets/doc/live-server.png)
 
 Afterwards, simply right-click on the `index.html` file and select *Open with Live Server* . Live server ensures that not only the file will load all resources attached to it, but it also will listen to changes on it or on its dependencies.
 
-![Opening with Live Server](/images/open-live-server.png)
+![Opening with Live Server](/assets/doc/open-live-server.png)
