@@ -11,16 +11,6 @@
     margin: auto;
 }
 
-.header-title {
-    font-size: 3.5vw;
-    color: #E30613;
-    font-weight: bold;
-}
-
-.message {
-    font-size: 1.5vw;
-}
-
 .button {
     cursor: pointer;
 }
@@ -33,6 +23,16 @@
     opacity: 0.5;
 }
 
+.header-title {
+    font-size: 8vw;
+    color: #E30613;
+    font-weight: bold;
+}
+
+.main.inspiration__card-message {
+    font-size: 8vw;
+}
+    
 .main__top-background {
     position: absolute;
     width: 140vw;
@@ -50,6 +50,7 @@
     height: calc(100vw * 9 / 16) /* TODO make this prettier */
 }
 
+    
 .header__loctite-logo {
     position: absolute;
     top: 0;
@@ -62,10 +63,10 @@
     width: 100%;
     height: 100%;
     color: white;
-    font-size: 6vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
 }
 
 .header__message-top {
@@ -73,24 +74,20 @@
 }
 
 .header__play-image {
-    width: 15vw;
+    width: 25vw
 }
 
 .top-commercial {
     display: flex;
     padding: 12.5%;
     max-width: 100%;
-}
-
-.top-commercial__text-container {
-    width: 50%;
-    display: flex;
     flex-direction: column;
 }
 
 .top-commercial__header {
-    width: 50%;
+    width: 100%;
     padding-bottom: 2%;
+    text-align: center;
 }
 
 .top-commercial__separator {
@@ -99,9 +96,15 @@
     background-color: #cccccc;
 }
 
-.top-commercial__message {
-    padding-top: 2%;
-    width: 35vw;
+.top-commercial__jacket-image, .top-commercial__m, .top-commercial__adventure, .top-commercial__p, .products__trousers-image {
+    display: none;
+}
+
+.top-commercial__text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top-commercial__created-by {
@@ -109,19 +112,16 @@
     width: 50%;
 }
 
+.top-commercial__message {
+    padding-top: 2%;
+    width: 100%;
+}
+
 .top-commercial__created-message {
     font-style: italic;
     color:gray;
     font-size: 1.25vw;
     width: 100%;
-}
-
-.top-commercial__jacket-image {
-    position: absolute;
-    width: 50vw;
-    right: -22.5vw;
-    z-index: -1;
-    transform: translateY(-25%);
 }
 
 .top-commercial__logos-container {
@@ -159,6 +159,10 @@
     transform: matrix(0.99, 0.16, -0.16, 0.99, 0, 0) translateY(100%) translateX(20%);
 }
 
+.top-commercial__message, .features__feature-message {
+    font-size: 4vw;
+}
+
 .features__features-container {
     width: 90%;
     display: flex;
@@ -170,10 +174,16 @@
 .features__features-box {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     margin: 2.5% auto;
     align-items: center;
+}
+
+.features__feature-message {
+    font-weight: bold;
+    font-size: 1.75vw;
+    margin-bottom: 3.5%;
 }
 
 .features__feature {
@@ -182,36 +192,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.features__feature-message {
-    font-weight: bold;
-    font-size: 1.75vw;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 
 .features__feature-image {
-    width: 10vw;
+    width: 25vw;
     height: 100%;
 }
 
+    
 .features__bottom {
     margin: 3.5% auto;
 }
 
-.products__products-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.products__trousers-image {
-    position: absolute;
-    width: 29vw;
-    right: -10.5vw;
-    z-index: -1;
-    transform: translateY(125%);
+.features__bottom-message, .message, .inspiration__source, .footer__link, .footer__copyright {
+    font-size: 3.5vw;
+    text-align: center;
 }
 
 .products__list-container {
@@ -219,6 +215,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
@@ -229,15 +226,16 @@
     justify-content: space-around;
     list-style-type: circle;
     margin: 2.5%;
+    width: 100%;
 }
 
 .product__image {
-    width: 13vw;
     justify-self: flex-start;
+    width: 40vw;
 }
 
 .product__info {
-    align-self: flex-end;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,32 +244,27 @@
 
 .product__name {
     margin-top: 6.5%;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 .product__type {
-    font-size: 2vw;
+    font-size: 5vw;
     font-weight: bolder;
-}
-
-.product__features {
-    list-style: disc;
-    list-style-position: inside;
-    text-align: center;
-    font-style: italic;
-    font-size: 1vw;
-    color: gray;
 }
 
 .product__button {
     background-color: #E30613;
     color: white;
-    font-size: 2.25vw;
+    font-size: 5vw;
     border-radius: 1em;
     padding: 0.5vw 2vw;
     margin: 10% auto;
 }
 
+.product__features {
+    font-size: 3.5vw;
+}
+    
 .inspiration__container {
     width: 100%;
     display: flex;
@@ -282,12 +275,12 @@
 
 .inspiration__card-container {
     display: flex;
-    flex-direction: row;
     width: 80%;
     justify-content: space-evenly;
     margin: 3.5% auto 2% auto;
+    flex-direction: column;
 }
-
+    
 .inspiration__trainers-image {
     position: absolute;
     width: 32.5vw;
@@ -299,7 +292,7 @@
 .inspiration__card {
     display: flex;
     margin: 2%;
-    height: 35vw;
+    height: 100vw;
 }
 
 .inspiration__card-message {
@@ -309,7 +302,7 @@
     padding: 8.5%;
     align-self: flex-end;
 }
-
+    
 .repairing {
     background-image: url('/assets/4_Secador.png');
     background-size: 100% 100%;
@@ -333,26 +326,18 @@
     font-size: 1vw;
 }
 
-.footer__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #5D5D5D;
-    font-size: 1.5vw;
-    margin-bottom: 5%;
-}
-
 .footer__henkel-image {
     margin-bottom: 3%;
-    width: 8vw;
+    width: 20vw;
 }
 
 .footer__interest-links {
     width: 95%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
 .footer__interest-links > * {
@@ -364,101 +349,145 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    .header-title, .inspiration__card-message {
-        font-size: 8vw;
+@media only screen and (min-width: 600px) {
+    .header-title {
+        font-size: 3.5vw;
     }
-
-    .header__message-container {
-        align-items: center;
-        font-size: 10vw;
-    }
-
-    .header__play-image {
-        width: 25vw
-    }
-
-    .top-commercial {
-        flex-direction: column;
-    }
-
-    .top-commercial__header {
-        text-align: center;
+    
+    .message {
+        font-size: 1.5vw;
     }
 
     .top-commercial__jacket-image, .top-commercial__m, .top-commercial__adventure, .top-commercial__p, .products__trousers-image {
-        display: none;
+        display: block;
+    }
+    
+    .header__message-container {
+        font-size: 6vw;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .header__play-image {
+        width: 15vw;
+    }
+    
+    .top-commercial {
+        flex-direction: unset;
+    }
+    
+    .top-commercial__text-container {
+        align-items: baseline;
+    }
+    
+    .top-commercial__header {
+        text-align: unset;
     }
 
-    .top-commercial__text-container, .top-commercial__header, .top-commercial__message {
-        width: 100%;
-        align-items: center;
+    .top-commercial__message {
+        width: 35vw;
     }
-
-    .top-commercial__message, .features__feature-message {
-        font-size: 4vw;
+    
+    .top-commercial__jacket-image {
+        position: absolute;
+        width: 50vw;
+        right: -22.5vw;
+        z-index: -1;
+        transform: translateY(-25%);
     }
-
+    
     .features__features-box {
-        flex-direction: column;
+        flex-direction: row;
     }
-
-    .features__feature-message {
-        margin-bottom: 3.5%;
-    }
-
+    
     .features__feature {
-        margin-bottom: 15%;
+        margin-bottom: 0%;
     }
-
+    
+    .features__feature-message {  
+        margin-bottom: 10%;
+    }
+    
     .features__feature-image {
-        width: 25vw;
+        width: 10vw;
     }
 
-    .features__bottom-message, .message, .inspiration__source, .footer__link, .footer__copyright {
-        font-size: 3.5vw;
-        text-align: center;
-    }
-
-    .products__list-container {
-        align-items: center;
-    }
-
-    .product__item {
+    .products__products-container {
         width: 100%;
-    }
-
-    .product__image {
-        width: 40vw;
-    }
-
-    .product__info {
-        align-self: center;
-    }
-
-    .product__name, .product__type, .product__button {
-        font-size: 5vw;
-    }
-
-    .product__features {
-        font-size: 3.5vw;
-    }
-
-    .inspiration__card-container {
-        flex-direction: column;
-    }
-
-    .inspiration__card {
-        height: 100vw;
-    }
-
-    .footer__henkel-image {
-        width: 20vw;
-    }
-
-    .footer__interest-links {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    .products__trousers-image {
+        position: absolute;
+        width: 29vw;
+        right: -10.5vw;
+        z-index: -1;
+        transform: translateY(125%);
+    }
+    
+    .products__list-container {
+        align-items: baseline;
+    }
+    
+    .product__item {
+        width: auto;
+    }
+    
+    .product__image {
+        width: 13vw;
+    }
+    
+    .product__info {
+        align-self: flex-end;
+    }
+    
+    .product__name {
+        font-size: 2vw;
+    }
+    
+    .product__type {
+        font-size: 2vw;
+    }
+    
+    .product__features {
+        list-style: disc;
+        list-style-position: inside;
+        text-align: center;
+        font-style: italic;
+        font-size: 1vw;
+        color: gray;
+    }
+    
+    .product__button {
+        font-size: 2.25vw;
+    }
+    
+    .inspiration__card-container {
+        flex-direction: row;  
+    }
+    
+    .inspiration__card {
+        height: 35vw;
+    }
+    
+    .footer__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #5D5D5D;
+        font-size: 1.5vw;
         margin-bottom: 5%;
+    }
+    
+    .footer__henkel-image {
+        width: 8vw;
+    }
+    
+    .footer__interest-links {
+        align-items: baseline;
+        flex-direction: row;  
     }
 }
