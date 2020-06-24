@@ -4,10 +4,10 @@ This is a small project I did for Buzz Marketing Networks. Features a responsive
 
 The landing page focuses on being fully responsive and senseful in both mobile and desktop screen sizes. While the desktop design is the one I was meant to replicate, the mobile one was improvised.
 
-NOTE: `mediaqueries-switch` branch features the same project refactored with the mediaqueries' setup switched (e.g. mobile-first)
+NOTE: `mediaqueries-switch` branch features the same project refactored with the mediaqueries' setup switched (i.e. mobile-first)
 
 ## Initialization
-The best way to open the project is to first install *Live Server* on the Visual Studio Code editor. Any of this resources is completely free: 
+The best way to open the project is to first install *Live Server* on the Visual Studio Code editor. Any of these resources are completely free: 
 
 ![Live Server](/assets/doc/live-server.png)
 
