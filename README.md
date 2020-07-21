@@ -1,6 +1,6 @@
-# Buzz test (Loctite landing page)
+# Loctite responsive landing page
 ## Description
-This is a small project I did for Buzz Marketing Networks. Features a responsive landing page example for *Loctite* products. I would like to thank in advance to Buzz Marketing Networks for the interest in my software competencies. 
+This is a small project I did for a company. Features a responsive landing page example for *Loctite* products. I would like to thank in advance to the company for the interest in my software competencies. 
 
 The landing page focuses on being fully responsive and senseful in both mobile and desktop screen sizes. While the desktop design is the one I was meant to replicate, the mobile one was improvised.
 
